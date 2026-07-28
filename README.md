@@ -75,5 +75,5 @@ Source: [Kaggle](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction)
 
 ## 👤 Author
 
-**Muhammad Tayyab Nawaz**
+**Tayyab Shahid**
 [GitHub](https://github.com/tayyabshahid029021)
