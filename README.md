@@ -1,9 +1,6 @@
 # 🏠 House Price Predictor — King County, USA
 
-A machine learning web app that predicts house prices based on location, 
-size, condition, and other key features using real estate data from King County, USA.
-
-🌐 **Live App:** [Click here to try it](https://hamza-house-predictor.streamlit.app/)
+A machine learning project that predicts house prices based on location, size, condition, and other key features using real estate sales data from King County, USA.
 
 ---
 
@@ -11,42 +8,34 @@ size, condition, and other key features using real estate data from King County,
 
 | Model | R² Score |
 |-------|----------|
-| Linear Regression | ~0.65 |
-| Gradient Boosting | **0.88** |
+| Linear Regression | 0.7336 |
+| Gradient Boosting | **0.9215** |
 
-Gradient Boosting outperformed Linear Regression significantly, 
-capturing non-linear relationships between features and price.
+Gradient Boosting significantly outperformed Linear Regression, capturing non-linear relationships between features and price much more effectively.
 
 ---
 
 ## 📁 Project Structure
 
+```
 house-price-predictor/
 │
 ├── housesales.ipynb      # Main notebook (EDA + Model Training)
-├── app.py                # Streamlit web app
+├── app.py                # Prediction script
 ├── kc_house_data.csv     # Dataset
 ├── requirements.txt      # Dependencies
 └── README.md             # Project documentation
+```
 
 ---
 
 ## 🔍 What's Inside the Notebook
 
-- **Exploratory Data Analysis** — 10+ visualizations (price vs sqft, location, bedrooms, waterfront)
-- **Feature Engineering** — Date conversion, feature selection
-- **Linear Regression** — Baseline model
-- **Gradient Boosting** — High accuracy model (R² = 0.88)
-- **PCA Analysis** — 19 features → 14 components cover 95% variance
-
----
-
-## 🌐 Streamlit Web App Features
-
-- Interactive sliders for all house features
-- Real-time price prediction
-- Low & High price range estimate
-- Model performance displayed
+- **Exploratory Data Analysis** — Visualizations exploring relationships between price, square footage, location, bedrooms, floors, and waterfront properties
+- **Feature Engineering** — Data cleaning, date conversion, feature selection
+- **PCA Analysis** — Dimensionality reduction, identifying the number of components needed to explain 95% of the variance
+- **Linear Regression** — Baseline model (R² = 0.7336)
+- **Gradient Boosting** — High-accuracy model (R² = 0.9215)
 
 ---
 
@@ -56,29 +45,35 @@ house-price-predictor/
 - Pandas, NumPy
 - Scikit-learn
 - Matplotlib, Seaborn
-- Streamlit
 
 ---
 
 ## ▶️ Run Locally
 
 ```bash
-git clone https://github.com/hamzaisrar0001/house-price-predictor.git
-cd house-price-predictor
+git clone https://github.com/tayyabshahid029021/House-Price-Prediction-Model.git
+cd House-Price-Prediction-Model
+python -m venv venv
+venv\Scripts\activate      # Windows
 pip install -r requirements.txt
-streamlit run app.py
+python app.py
+```
+
+Or explore the full analysis and model training process:
+```bash
+jupyter notebook housesales.ipynb
 ```
 
 ---
 
 ## 📦 Dataset
 
-King County House Sales Dataset — 21,000+ records  
+King County House Sales Dataset — 21,000+ records
 Source: [Kaggle](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction)
 
 ---
 
 ## 👤 Author
 
-**Muhammad Hamza Israr**  
-[GitHub](https://github.com/hamzaisrar0001) · [LinkedIn](https://linkedin.com/in/hamzaisrar0001)
+**Muhammad Tayyab Nawaz**
+[GitHub](https://github.com/tayyabshahid029021)
