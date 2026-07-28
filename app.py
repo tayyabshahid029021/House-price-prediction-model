@@ -12,7 +12,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# ─── Model train karo (sirf ek baar) ───
+
 @st.cache_resource
 def load_model():
     data = pd.read_csv("kc_house_data.csv")
@@ -34,7 +34,7 @@ def load_model():
 
 clf, r2_score, feature_cols = load_model()
 
-# ─── UI ───
+# UI
 st.title("🏠 House Price Predictor")
 st.caption("King County, USA — Gradient Boosting Model")
 
